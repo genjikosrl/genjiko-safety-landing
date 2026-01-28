@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genjiko Safety – Italian Hub (B2B)</title>
+  <meta name="description" content="B2B distribution for Safety & Compliance in Italy: signage, fire protection, evacuation, emergency preparedness." />
+  <style>
+    :root{
+      --maxw: 980px;
+      --fg: #111;
+      --muted: #555;
+      --line: #e6e6e6;
+      --bg: #fff;
+      --chip: #f6f6f6;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;line-height:1.55;}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:48px 18px 80px;}
+    header{padding-bottom:22px;border-bottom:1px solid var(--line);}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+    .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0;}
+    .lang{display:flex;gap:8px;align-items:center;}
+    .lang button{
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111;
+      padding:8px 10px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .lang button.active{border-color:#111;}
+    h1{font-size:40px;line-height:1.1;margin:14px 0 14px;font-weight:900;}
+    .sub{font-size:18px;color:#222;max-width:74ch;margin:0 0 18px;}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0;padding:0;list-style:none}
+    .chip{background:var(--chip);border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:13px;color:#222}
+    .grid{display:grid;grid-template-columns: 1.2fr .8fr;gap:18px;margin-top:22px;}
+    @media (max-width: 860px){ .grid{grid-template-columns:1fr;} h1{font-size:34px;} }
+    .card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;}
+    h2{font-size:18px;margin:0 0 10px;}
+    ul{margin:10px 0 0 18px;padding:0;}
+    li{margin:6px 0;color:#222;}
+    .muted{color:var(--muted);}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+    a.btn{display:inline-block;text-decoration:none;border-radius:12px;padding:12px 14px;font-weight:900;font-size:14px;border:1px solid #111;color:#fff;background:#111;}
+    a.btn.secondary{background:#fff;color:#111;border-color:var(--line);}
+    .small{font-size:12px;color:var(--muted);margin-top:10px;}
+    footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
+    @media (max-width: 860px){ .two{grid-template-columns:1fr;} }
+    .tag{font-weight:800;color:#111}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topbar">
+        <p class="kicker" id="kicker">B2B ONLY • ITALY</p>
+        <div class="lang" aria-label="Language switcher">
+          <button id="btn-de" type="button">DE</button>
+          <button id="btn-en" type="button" class="active">EN</button>
+          <button id="btn-it" type="button">IT</button>
+        </div>
+      </div>
+
+      <h1 id="title">Genjiko Safety – Italian Hub</h1>
+      <p class="sub" id="subtitle">
+        B2B distribution for <span class="tag">Safety & Compliance</span> in Italy:
+        safety signage (DIN/ISO/EN), fire protection equipment, evacuation & emergency solutions.
+      </p>
+
+      <div class="cta">
+        <a class="btn" id="ctaMail" href="mailto:partnerships@genjiko.eu?subject=Genjiko%20Safety%20B2B%20-%20Partnership%20inquiry">Contact (B2B)</a>
+        <a class="btn secondary" id="ctaSup" href="#suppliers">For manufacturers & suppliers</a>
+      </div>
+
+      <p class="small" id="subnote">
+        No retail. No end-customer shop. We work with manufacturers, distributors and professional partners.
+      </p>
+
+      <ul class="chips" aria-label="Focus areas" id="chips">
+        <li class="chip">Safety Signage</li>
+        <li class="chip">Fire Protection</li>
+        <li class="chip">Evacuation & Plans</li>
+        <li class="chip">Emergency Preparedness</li>
+        <li class="chip">Business Continuity (selected)</li>
+      </ul>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2 id="h2a">What we distribute</h2>
+
+        <div class="two">
+          <div>
+            <strong id="b1t">Safety & Compliance</strong>
+            <ul id="b1">
+              <li>DIN / ISO / EN safety signage</li>
+              <li>Exit & escape route signs (incl. photoluminescent)</li>
+              <li>Evacuation plans, markers, supports</li>
+              <li>Workplace safety accessories</li>
+            </ul>
+          </div>
+          <div>
+            <strong id="b2t">Fire Protection</strong>
+            <ul id="b2">
+              <li>Fire extinguishers & accessories</li>
+              <li>Wall mounts, cabinets, identification signage</li>
+              <li>Basic fire safety equipment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="two">
+          <div>
+            <strong id="b3t">Emergency / Preparedness</strong>
+            <ul id="b3">
+              <li>Workplace emergency kits</li>
+              <li>Emergency lighting & tools</li>
+              <li>Non-medical first-response equipment</li>
+            </ul>
+          </div>
+          <div>
+            <strong id="b4t">Business Continuity (selected)</strong>
+            <ul id="b4">
+              <li>UPS / USV (selected ranges)</li>
+              <li>Blackout readiness solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="muted" id="howline" style="margin-top:14px;">
+          We prioritize professional-grade products, technical documentation and compliant supply chains.
+        </p>
+      </div>
+
+      <aside class="card" id="suppliers">
+        <h2 id="h2b">For manufacturers & suppliers</h2>
+        <p class="muted" id="supIntro" style="margin:0 0 10px;">
+          We are looking for EU manufacturers or established B2B wholesalers with:
+        </p>
+        <ul id="supList">
+          <li>Distributor price lists (not retail discounts)</li>
+          <li>Technical PDF catalogs / datasheets</li>
+          <li>Partner / Händler / Distributor program</li>
+          <li>B2B direct shipping to Italy (after payment)</li>
+        </ul>
+
+        <p class="muted" id="supAsk" style="margin-top:14px;">
+          Send: price list, catalogs, MOQ, delivery terms.
+        </p>
+
+        <p class="mono" style="margin:10px 0 0;">
+          Email: <span id="emailTxt">partnerships@genjiko.eu</span>
+        </p>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+      <h2 id="h2c">How we work</h2>
+      <ul id="workList">
+        <li><strong>Strictly B2B</strong>: companies, hotels, facilities, condominiums, industry.</li>
+        <li><strong>Payment-first</strong>: shipment after funds are received.</li>
+        <li><strong>No stock required</strong>: direct supply chain with manufacturers/wholesalers.</li>
+        <li><strong>Neutral / institutional packaging</strong> where applicable.</li>
+      </ul>
+    </section>
+
+    <footer id="footer">
+      Operated by <strong>Genjiko Srl</strong> (Italy).<br/>
+      VAT / P.IVA: <span class="mono">[INSERISCI P.IVA]</span> • Address: <span class="mono">[INSERISCI SEDE]</span><br/>
+      Main website: <span class="mono">https://www.genjiko.eu</span>
+    </footer>
+  </div>
+
+  <script>
+    const EMAIL = "partnerships@genjiko.eu";
+
+    const i18n = {
+      en: {
+        kicker: "B2B ONLY • ITALY",
+        title: "Genjiko Safety – Italian Hub",
+        subtitle: "B2B distribution for Safety & Compliance in Italy: safety signage (DIN/ISO/EN), fire protection equipment, evacuation & emergency solutions.",
+        ctaMail: "Contact (B2B)",
+        ctaSup: "For manufacturers & suppliers",
+        subnote: "No retail. No end-customer shop. We work with manufacturers, distributors and professional partners.",
+        chips: ["Safety Signage","Fire Protection","Evacuation & Plans","Emergency Preparedness","Business Continuity (selected)"],
+        h2a: "What we distribute",
+        b1t: "Safety & Compliance",
+        b1: ["DIN / ISO / EN safety signage","Exit & escape route signs (incl. photoluminescent)","Evacuation plans, markers, supports","Workplace safety accessories"],
+        b2t: "Fire Protection",
+        b2: ["Fire extinguishers & accessories","Wall mounts, cabinets, identification signage","Basic fire safety equipment"],
+        b3t: "Emergency / Preparedness",
+        b3: ["Workplace emergency kits","Emergency lighting & tools","Non-medical first-response equipment"],
+        b4t: "Business Continuity (selected)",
+        b4: ["UPS / USV (selected ranges)","Blackout readiness solutions"],
+        howline: "We prioritize professional-grade products, technical documentation and compliant supply chains.",
+        h2b: "For manufacturers & suppliers",
+        supIntro: "We are looking for EU manufacturers or established B2B wholesalers with:",
+        supList: ["Distributor price lists (not retail discounts)","Technical PDF catalogs / datasheets","Partner / Händler / Distributor program","B2B direct shipping to Italy (after payment)"],
+        supAsk: "Send: price list, catalogs, MOQ, delivery terms.",
+        h2c: "How we work",
+        workList: ["Strictly B2B: companies, hotels, facilities, condominiums, industry.","Payment-first: shipment after funds are received.","No stock required: direct supply chain with manufacturers/wholesalers.","Neutral / institutional packaging where applicable."],
+        footer: "Operated by <strong>Genjiko Srl</strong> (Italy).<br/>VAT / P.IVA: <span class='mono'>[INSERISCI P.IVA]</span> • Address: <span class='mono'>[INSERISCI SEDE]</span><br/>Main website: <span class='mono'>https://www.genjiko.eu</span>"
+      },
+      it: {
+        kicker: "SOLO B2B • ITALIA",
+        title: "Genjiko Safety – Hub Italia",
+        subtitle: "Distribuzione B2B per Safety & Compliance in Italia: segnaletica (DIN/ISO/EN), dotazioni antincendio, evacuazione e soluzioni di emergenza.",
+        ctaMail: "Contatto (B2B)",
+        ctaSup: "Per produttori & fornitori",
+        subnote: "Niente retail. Nessun e-commerce per il pubblico. Lavoriamo con produttori, distributori e partner professionali.",
+        chips: ["Segnaletica sicurezza","Antincendio","Evacuazione & planimetrie","Preparazione emergenze","Continuità operativa (selez.)"],
+        h2a: "Cosa distribuiamo",
+        b1t: "Safety & Compliance",
+        b1: ["Segnaletica DIN / ISO / EN","Cartelli uscita e vie di fuga (anche fotoluminescenti)","Planimetrie evacuazione, marker, supporti","Accessori sicurezza per ambienti di lavoro"],
+        b2t: "Antincendio",
+        b2: ["Estintori & accessori","Supporti, armadi/teche, cartellonistica identificativa","Dotazioni antincendio di base"],
+        b3t: "Emergenza / Preparedness",
+        b3: ["Kit emergenza aziendali","Illuminazione di emergenza & strumenti","Dotazioni di primo supporto non medicali"],
+        b4t: "Continuità operativa (selez.)",
+        b4: ["UPS / gruppi di continuità (selezionati)","Soluzioni blackout (selezionate)"],
+        howline: "Selezioniamo prodotti professionali con documentazione tecnica e filiera conforme.",
+        h2b: "Per produttori & fornitori",
+        supIntro: "Cerchiamo produttori UE o grossisti B2B consolidati con:",
+        supList: ["Listini da distributore (non sconti retail)","Cataloghi PDF tecnici / datasheet","Programmi Partner / Händler / Distributor","Spedizione B2B diretta in Italia (dopo pagamento)"],
+        supAsk: "Inviare: listini, cataloghi, MOQ, condizioni di consegna.",
+        h2c: "Come lavoriamo",
+        workList: ["Solo B2B: aziende, hotel, strutture, condomini, industria.","Pagamento prima: spedizione dopo accredito.","No magazzino richiesto: filiera diretta con produttori/grossisti.","Packaging neutro o istituzionale ove applicabile."],
+        footer: "Operato da <strong>Genjiko Srl</strong> (Italia).<br/>P.IVA: <span class='mono'>[INSERISCI P.IVA]</span> • Sede: <span class='mono'>[INSERISCI SEDE]</span><br/>Sito principale: <span class='mono'>https://www.genjiko.eu</span>"
+      },
+      de: {
+        kicker: "NUR B2B • ITALIEN",
+        title: "Genjiko Safety – Italienischer Hub",
+        subtitle: "B2B-Vertrieb für Safety & Compliance in Italien: Sicherheitskennzeichnung (DIN/ISO/EN), Brandschutz, Evakuierung & betriebliche Notfalllösungen.",
+        ctaMail: "Kontakt (B2B)",
+        ctaSup: "Für Hersteller & Lieferanten",
+        subnote: "Kein Retail. Kein Endkunden-Shop. Zusammenarbeit mit Herstellern, Distributoren und professionellen Partnern.",
+        chips: ["Sicherheitskennzeichnung","Brandschutz","Evakuierung & Pläne","Notfallvorsorge","Business Continuity (Auswahl)"],
+        h2a: "Was wir vertreiben",
+        b1t: "Safety & Compliance",
+        b1: ["DIN / ISO / EN Sicherheitskennzeichnung","Fluchtweg- & Rettungszeichen (auch nachleuchtend)","Evakuierungspläne, Marker, Halterungen","Arbeitssicherheits-Zubehör"],
+        b2t: "Brandschutz",
+        b2: ["Feuerlöscher & Zubehör","Halterungen, Schränke, Kennzeichnung","Grundausstattung Brandschutz"],
+        b3t: "Notfall / Preparedness",
+        b3: ["Betriebliche Notfallsets","Notbeleuchtung & Tools","Nicht-medizinische Ersthilfe-Ausstattung"],
+        b4t: "Business Continuity (Auswahl)",
+        b4: ["USV / UPS (ausgewählte Sortimente)","Blackout-Readiness Lösungen"],
+        howline: "Wir priorisieren professionelle Produkte mit technischer Dokumentation und normkonformer Lieferkette.",
+        h2b: "Für Hersteller & Lieferanten",
+        supIntro: "Wir suchen EU-Hersteller oder etablierte B2B-Großanbieter mit:",
+        supList: ["Distributor-Preisliste (keine Retail-Rabatte)","Technische PDF-Kataloge / Datenblätter","Partner / Händler / Distributor Programm","Direktversand B2B nach Italien (nach Zahlung)"],
+        supAsk: "Bitte senden: Preisliste, Kataloge, MOQ, Lieferbedingungen.",
+        h2c: "So arbeiten wir",
+        workList: ["Nur B2B: Unternehmen, Hotels, Anlagen, Wohnanlagen, Industrie.","Zahlung zuerst: Versand nach Zahlungseingang.","Kein Lager nötig: direkte Lieferkette mit Herstellern/Großhandel.","Neutrale / institutionelle Verpackung, sofern möglich."],
+        footer: "Betrieben von <strong>Genjiko Srl</strong> (Italien).<br/>USt-IdNr.: <span class='mono'>[INSERISCI P.IVA]</span> • Adresse: <span class='mono'>[INSERISCI SEDE]</span><br/>Hauptseite: <span class='mono'>https://www.genjiko.eu</span>"
+      }
+    };
+
+    function setText(lang){
+      const t = i18n[lang];
+      document.documentElement.lang = lang;
+
+      document.getElementById("kicker").textContent = t.kicker;
+      document.getElementById("title").textContent = t.title;
+      document.getElementById("subtitle").innerHTML = t.subtitle.replace("Safety & Compliance", "<span class='tag'>Safety & Compliance</span>");
+
+      document.getElementById("ctaMail").textContent = t.ctaMail;
+      document.getElementById("ctaSup").textContent = t.ctaSup;
+      document.getElementById("subnote").textContent = t.subnote;
+
+      const chips = document.getElementById("chips");
+      chips.innerHTML = "";
+      t.chips.forEach(x => {
+        const li = document.createElement("li");
+        li.className = "chip";
+        li.textContent = x;
+        chips.appendChild(li);
+      });
+
+      document.getElementById("h2a").textContent = t.h2a;
+      document.getElementById("b1t").textContent = t.b1t;
+      document.getElementById("b2t").textContent = t.b2t;
+      document.getElementById("b3t").textContent = t.b3t;
+      document.getElementById("b4t").textContent = t.b4t;
+
+      const fill = (id, arr) => {
+        const ul = document.getElementById(id);
+        ul.innerHTML = "";
+        arr.forEach(x => {
+          const li = document.createElement("li");
+          li.textContent = x;
+          ul.appendChild(li);
+        });
+      };
+      fill("b1", t.b1);
+      fill("b2", t.b2);
+      fill("b3", t.b3);
+      fill("b4", t.b4);
+
+      document.getElementById("howline").textContent = t.howline;
+
+      document.getElementById("h2b").textContent = t.h2b;
+      document.getElementById("supIntro").textContent = t.supIntro;
+
+      fill("supList", t.supList);
+      document.getElementById("supAsk").textContent = t.supAsk;
+
+      document.getElementById("h2c").textContent = t.h2c;
+      fill("workList", t.workList);
+
+      document.getElementById("footer").innerHTML = t.footer;
+
+      // mailto subject localized (simple)
+      const subject = encodeURIComponent(
+        lang === "de" ? "Genjiko Safety B2B – Anfrage Vertriebspartnerschaft" :
+        lang === "it" ? "Genjiko Safety B2B – Richiesta partnership fornitori" :
+                        "Genjiko Safety B2B – Partnership inquiry"
+      );
+      document.getElementById("ctaMail").href = `mailto:${EMAIL}?subject=${subject}`;
+      document.getElementById("emailTxt").textContent = EMAIL;
+
+      // active buttons
+      ["de","en","it"].forEach(x => {
+        document.getElementById(`btn-${x}`).classList.toggle("active", x === lang);
+      });
+    }
+
+    // default language (EN). If browser is German, start DE.
+    const pref = (navigator.language || "").toLowerCase();
+    if (pref.startsWith("de")) setText("de");
+    else if (pref.startsWith("it")) setText("it");
+    else setText("en");
+
+    document.getElementById("btn-de").addEventListener("click", () => setText("de"));
+    document.getElementById("btn-en").addEventListener("click", () => setText("en"));
+    document.getElementById("btn-it").addEventListener("click", () => setText("it"));
+  </script>
+</body>
+</html>
