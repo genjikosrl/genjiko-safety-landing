@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ContactDialog } from "@/components/ContactDialog";
+import logoImg from "@assets/web_1769614776326.png";
 
 type Lang = "en" | "it" | "de";
 
@@ -101,12 +102,12 @@ export default function Home() {
   const t = i18n[lang];
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans text-foreground selection:bg-black selection:text-white">
+    <div className="min-h-screen bg-[#fafafa] font-sans text-foreground selection:bg-primary selection:text-white">
       {/* Top Bar */}
       <div className="border-b bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-14 items-center justify-between">
-            <span className="font-mono text-xs font-bold tracking-widest uppercase text-black">
+            <span className="font-mono text-xs font-bold tracking-widest uppercase text-muted-foreground">
               {t.kicker}
             </span>
             <LanguageSwitcher currentLang={lang} onChange={setLang} />
@@ -122,6 +123,14 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-4xl text-center mb-16"
         >
+          <div className="flex justify-center mb-8">
+            <img 
+              src={logoImg} 
+              alt="Genjiko Safety Logo" 
+              className="h-24 md:h-32 object-contain"
+            />
+          </div>
+          
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
             {t.title}
           </h1>
@@ -134,7 +143,7 @@ export default function Home() {
               title={t.ctaMail}
               subtitle="Please detail your request. We strictly serve B2B clients."
               trigger={
-                <Button size="lg" className="rounded-none h-12 px-8 font-medium">
+                <Button size="lg" className="rounded-none h-12 px-8 font-medium bg-primary hover:bg-primary/90">
                   {t.ctaMail}
                 </Button>
               }
@@ -144,7 +153,7 @@ export default function Home() {
               title={t.ctaSup}
               subtitle="Looking to distribute your products in Italy? Send us your proposal."
               trigger={
-                <Button size="lg" variant="outline" className="rounded-none h-12 px-8 font-medium border-foreground text-foreground hover:bg-secondary">
+                <Button size="lg" variant="outline" className="rounded-none h-12 px-8 font-medium border-primary text-primary hover:bg-secondary/10">
                   {t.ctaSup}
                 </Button>
               }
@@ -162,7 +171,7 @@ export default function Home() {
             <Badge 
               key={i} 
               variant="secondary" 
-              className="rounded-none px-3 py-1.5 text-xs font-mono uppercase tracking-wide bg-[#f0f0f0] hover:bg-[#e0e0e0] text-muted-foreground"
+              className="rounded-none px-3 py-1.5 text-xs font-mono uppercase tracking-wide bg-secondary/10 hover:bg-secondary/20 text-secondary"
             >
               {chip}
             </Badge>
@@ -179,22 +188,22 @@ export default function Home() {
             transition={{ delay: 0.1 }}
             className="lg:col-span-2 space-y-8"
           >
-            <div className="b2b-card h-full">
+            <div className="b2b-card h-full border-t-4 border-t-secondary">
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-black rounded-full" />
+                <span className="w-1.5 h-1.5 bg-secondary rounded-full" />
                 {t.h2a}
               </h2>
               
               <div className="grid sm:grid-cols-2 gap-8">
                 {/* Section 1 */}
                 <div>
-                  <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3 font-mono">
+                  <h3 className="font-semibold text-sm uppercase tracking-wide text-primary mb-3 font-mono">
                     {t.b1t}
                   </h3>
                   <ul className="space-y-2">
                     {t.b1.map((item, i) => (
                       <li key={i} className="text-sm flex items-start gap-2">
-                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-muted-foreground/50" />
+                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-secondary" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -203,13 +212,13 @@ export default function Home() {
 
                 {/* Section 2 */}
                 <div>
-                  <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3 font-mono">
+                  <h3 className="font-semibold text-sm uppercase tracking-wide text-primary mb-3 font-mono">
                     {t.b2t}
                   </h3>
                   <ul className="space-y-2">
                     {t.b2.map((item, i) => (
                       <li key={i} className="text-sm flex items-start gap-2">
-                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-muted-foreground/50" />
+                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-secondary" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -218,13 +227,13 @@ export default function Home() {
 
                 {/* Section 3 */}
                 <div>
-                  <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3 font-mono">
+                  <h3 className="font-semibold text-sm uppercase tracking-wide text-primary mb-3 font-mono">
                     {t.b3t}
                   </h3>
                   <ul className="space-y-2">
                     {t.b3.map((item, i) => (
                       <li key={i} className="text-sm flex items-start gap-2">
-                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-muted-foreground/50" />
+                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-secondary" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -233,13 +242,13 @@ export default function Home() {
 
                 {/* Section 4 */}
                 <div>
-                  <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3 font-mono">
+                  <h3 className="font-semibold text-sm uppercase tracking-wide text-primary mb-3 font-mono">
                     {t.b4t}
                   </h3>
                   <ul className="space-y-2">
                     {t.b4.map((item, i) => (
                       <li key={i} className="text-sm flex items-start gap-2">
-                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-muted-foreground/50" />
+                        <ArrowRight className="w-3.5 h-3.5 mt-1 shrink-0 text-secondary" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -263,9 +272,9 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="lg:col-span-1"
           >
-            <div className="b2b-card h-full bg-foreground text-background border-foreground">
+            <div className="b2b-card h-full bg-primary text-background border-primary border-t-4 border-t-accent">
               <h2 className="text-xl font-bold mb-6 text-white flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-white rounded-full" />
+                <span className="w-1.5 h-1.5 bg-accent rounded-full" />
                 {t.h2b}
               </h2>
               
@@ -276,7 +285,7 @@ export default function Home() {
               <ul className="space-y-4 mb-8">
                 {t.supList.map((item, i) => (
                   <li key={i} className="text-sm text-white/90 flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-0.5 shrink-0 text-white/50" />
+                    <Check className="w-4 h-4 mt-0.5 shrink-0 text-accent" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -293,7 +302,7 @@ export default function Home() {
                   title={t.ctaSup}
                   subtitle={t.supAsk}
                   trigger={
-                    <Button variant="secondary" className="w-full rounded-none font-medium">
+                    <Button variant="secondary" className="w-full rounded-none font-medium bg-accent text-white hover:bg-accent/90 border-none">
                       Contact Supply Team
                     </Button>
                   }
@@ -313,14 +322,14 @@ export default function Home() {
         >
           <div className="b2b-card">
             <h2 className="text-xl font-bold mb-8 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-black rounded-full" />
+              <span className="w-1.5 h-1.5 bg-primary rounded-full" />
               {t.h2c}
             </h2>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {t.workList.map((item, i) => (
-                <div key={i} className="flex flex-col gap-4 p-4 bg-[#f8f8f8] border border-transparent hover:border-border transition-colors">
-                  <div className="w-10 h-10 bg-white border border-border flex items-center justify-center text-foreground">
+                <div key={i} className="flex flex-col gap-4 p-4 bg-[#f8f8f8] border border-transparent hover:border-secondary/20 transition-colors">
+                  <div className="w-10 h-10 bg-white border border-border flex items-center justify-center text-primary">
                     {iconMap[i as keyof typeof iconMap]}
                   </div>
                   <p className="text-sm font-medium leading-relaxed">
@@ -337,6 +346,11 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-white border-t border-border py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center gap-4 mb-6">
+            <div className="w-8 h-1 bg-secondary" />
+            <div className="w-8 h-1 bg-white border border-border" />
+            <div className="w-8 h-1 bg-accent" />
+          </div>
           <p 
             className="text-sm text-muted-foreground leading-relaxed"
             dangerouslySetInnerHTML={{ __html: t.footer }}
