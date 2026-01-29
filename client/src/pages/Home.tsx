@@ -241,7 +241,7 @@ export default function Home() {
   const t = useMemo(() => i18n[lang], [lang]);
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans text-foreground selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-[#fafafa] font-sans text-foreground selection:bg-primary selection:text-inherit">
       {/* Top Bar */}
       <div className="border-b bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -411,16 +411,16 @@ export default function Home() {
             className="lg:col-span-1"
           >
             <div className="b2b-card h-full border-primary border-t-4 border-t-accent bg-primary text-background">
-              <h2 className="mb-6 flex items-center gap-2 text-xl font-bold text-white">
+              <h2 className="mb-6 flex items-center gap-2 text-xl font-bold text-inherit">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                 {t.asideTitle}
               </h2>
 
-              <p className="mb-6 text-sm leading-relaxed text-white/80">{t.asideIntro}</p>
+              <p className="mb-6 text-sm leading-relaxed text-inherit/80">{t.asideIntro}</p>
 
               <ul className="mb-8 space-y-4">
                 {t.asideList.map((item: string, i: number) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-white/90">
+                  <li key={i} className="flex items-start gap-3 text-sm text-inherit/90">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                     <span>{item}</span>
                   </li>
@@ -428,15 +428,15 @@ export default function Home() {
               </ul>
 
               <div className="rounded-sm border border-white/20 bg-white/10 p-4">
-                <p className="mb-2 font-mono text-xs uppercase tracking-wide text-white/70">
+                <p className="mb-2 font-mono text-xs uppercase tracking-wide text-inherit/70">
                   {t.asideBoxTitle}
                 </p>
-                <p className="mb-4 text-sm font-medium text-white">{t.asideBoxText}</p>
+                <p className="mb-4 text-sm font-medium text-inherit">{t.asideBoxText}</p>
 
                 <Button
                   asChild
                   variant="secondary"
-                  className="w-full rounded-none border-none bg-accent font-medium text-white hover:bg-accent/90"
+                  className="w-full rounded-none border-none bg-accent font-medium text-inherit hover:bg-accent/90"
                 >
                   <a href={t.asideMailto}>{t.asideCta}</a>
                 </Button>
