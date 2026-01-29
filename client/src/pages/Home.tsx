@@ -59,17 +59,23 @@ const i18n: Record<Lang, any> = {
     b4: ["UPS / USV (selected ranges)", "Blackout readiness solutions"],
     howline:
       "We prioritize professional-grade products, technical documentation and compliant supply chains.",
-    h2b: "For manufacturers & suppliers",
-    supIntro: "We are looking for EU manufacturers or established B2B wholesalers with:",
-    supList: [
-      "Distributor price lists (not retail discounts)",
-      "Technical PDF catalogs / datasheets",
-      "Partner / Händler / Distributor program",
-      "B2B direct shipping to Italy (after payment)",
+
+    // Right column (non-ridondante)
+    asideTitle: "Requirements & Process",
+    asideIntro: "To speed up onboarding and quotes, we work like this:",
+    asideList: [
+      "Email request (company + sector + needs)",
+      "Quote based on distributor price list / partner program",
+      "Docs: datasheets and compliance (where applicable)",
+      "Payment first (B2B)",
+      "Direct shipping to Italy with confirmed lead times",
     ],
-    supAsk: "Send: price list, catalogs, MOQ, delivery terms.",
-    actionRequired: "Action required",
-    contactSupplyTeam: "Contact supply team",
+    asideBoxTitle: "For suppliers",
+    asideBoxText:
+      "Send: price list, PDF catalogs, MOQ, Incoterms, lead times, Italy coverage.",
+    asideCta: "Email supply team",
+    asideMailto: "mailto:partners@genjiko.it?subject=Genjiko%20Safety%20%E2%80%94%20Supply%20proposal%20(B2B)",
+
     h2c: "How we work",
     workList: [
       "Strictly B2B: companies, hotels, facilities, condominiums, industry.",
@@ -78,7 +84,7 @@ const i18n: Record<Lang, any> = {
       "Neutral / institutional packaging where applicable.",
     ],
     footer:
-      "Operated by <strong>Genjiko S.r.l.</strong> (Italy).<br/>VAT / P.IVA &amp; Tax Code: <span class='mono'>02584250035</span> • REA (Verbania): <span class='mono'>VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span> • Main website: <span class='mono'>genjiko.eu</span>",
+      "Operated by <strong>Genjiko S.r.l.</strong> (Italy).<br/>VAT / P.IVA &amp; Tax Code: <span class='mono'>02584250035</span> • REA (Verbania): <span class='mono'>VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span>",
   },
 
   it: {
@@ -122,17 +128,24 @@ const i18n: Record<Lang, any> = {
     b4t: "Continuità operativa (selez.)",
     b4: ["UPS / gruppi di continuità (selezionati)", "Soluzioni blackout (selezionate)"],
     howline: "Selezioniamo prodotti professionali con documentazione tecnica e filiera conforme.",
-    h2b: "Per produttori & fornitori",
-    supIntro: "Cerchiamo produttori UE o grossisti B2B consolidati con:",
-    supList: [
-      "Listini da distributore (non sconti retail)",
-      "Cataloghi PDF tecnici / datasheet",
-      "Programmi Partner / Händler / Distributor",
-      "Spedizione B2B diretta in Italia (dopo pagamento)",
+
+    // Right column (non-ridondante)
+    asideTitle: "Requisiti & Processo",
+    asideIntro: "Per accelerare onboarding e preventivi, lavoriamo così:",
+    asideList: [
+      "Richiesta via email (azienda + settore + necessità)",
+      "Preventivo su listino distributore / programma partner",
+      "Documenti: schede tecniche e conformità (dove applicabile)",
+      "Pagamento anticipato (B2B)",
+      "Spedizione diretta in Italia con tempi comunicati",
     ],
-    supAsk: "Inviare: listini, cataloghi, MOQ, condizioni di consegna.",
-    actionRequired: "Azione richiesta",
-    contactSupplyTeam: "Contatta team forniture",
+    asideBoxTitle: "Per i fornitori",
+    asideBoxText:
+      "Inviare: listino, cataloghi PDF, MOQ, Incoterms, tempi, copertura Italia.",
+    asideCta: "Scrivi a partners@genjiko.it",
+    asideMailto:
+      "mailto:partners@genjiko.it?subject=Genjiko%20Safety%20%E2%80%94%20Proposta%20fornitura%20(B2B)",
+
     h2c: "Come lavoriamo",
     workList: [
       "Solo B2B: aziende, hotel, strutture, condomini, industria.",
@@ -141,7 +154,7 @@ const i18n: Record<Lang, any> = {
       "Packaging neutro o istituzionale ove applicabile.",
     ],
     footer:
-      "Operato da <strong>Genjiko S.r.l.</strong> (Italia).<br/>P.IVA e C.F.: <span class='mono'>02584250035</span> • REA (Verbania): <span class='mono'>VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span> • Sito principale: <span class='mono'>genjiko.eu</span>",
+      "Operato da <strong>Genjiko S.r.l.</strong> (Italia).<br/>P.IVA e C.F.: <span class='mono'>02584250035</span> • REA (Verbania): <span class='mono'>VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span>",
   },
 
   de: {
@@ -150,11 +163,9 @@ const i18n: Record<Lang, any> = {
     subtitle:
       "B2B-Vertrieb für Safety & Compliance in Italien: Sicherheitskennzeichnung (DIN/ISO/EN), Brandschutz, Evakuierung & betriebliche Notfalllösungen.",
     ctaMail: "Kontakt (B2B)",
-    ctaMailSub:
-      "Bitte beschreiben Sie Ihre Anfrage. Wir bedienen ausschließlich B2B-Kunden.",
+    ctaMailSub: "Bitte beschreiben Sie Ihre Anfrage. Wir bedienen ausschließlich B2B-Kunden.",
     ctaSup: "Für Hersteller & Lieferanten",
-    ctaSupSub:
-      "Sie möchten Ihre Produkte in Italien vertreiben? Senden Sie uns Ihren Vorschlag.",
+    ctaSupSub: "Sie möchten Ihre Produkte in Italien vertreiben? Senden Sie uns Ihren Vorschlag.",
     subnote:
       "Kein Einzelhandel. Kein Endkundenshop. Wir arbeiten mit Herstellern, Händlern und professionellen Partnern.",
     chips: [
@@ -173,7 +184,11 @@ const i18n: Record<Lang, any> = {
       "Arbeitssicherheitszubehör",
     ],
     b2t: "Brandschutz",
-    b2: ["Feuerlöscher & Zubehör", "Wandhalterungen, Schränke, Kennzeichnung", "Grundlegende Brandschutzausrüstung"],
+    b2: [
+      "Feuerlöscher & Zubehör",
+      "Wandhalterungen, Schränke, Kennzeichnung",
+      "Grundlegende Brandschutzausrüstung",
+    ],
     b3t: "Notfall / Preparedness",
     b3: [
       "Notfall-Kits für den Arbeitsplatz",
@@ -184,17 +199,24 @@ const i18n: Record<Lang, any> = {
     b4: ["USV / UPS (ausgewählte Bereiche)", "Blackout-Vorsorgelösungen"],
     howline:
       "Wir priorisieren professionelle Produkte, technische Dokumentation und konforme Lieferketten.",
-    h2b: "Für Hersteller & Lieferanten",
-    supIntro: "Wir suchen EU-Hersteller oder etablierte B2B-Großhändler mit:",
-    supList: [
-      "Distributor-Preislisten (keine Einzelhandelsrabatte)",
-      "Technische PDF-Kataloge / Datenblätter",
-      "Partner- / Händler- / Distributor-Programm",
-      "B2B-Direktversand nach Italien (nach Zahlung)",
+
+    // Right column (non-ridondante)
+    asideTitle: "Anforderungen & Ablauf",
+    asideIntro: "Für schnelle Angebote und Onboarding arbeiten wir so:",
+    asideList: [
+      "Anfrage per E-Mail (Firma + Branche + Bedarf)",
+      "Angebot auf Basis Distributor-Preisliste / Partnerprogramm",
+      "Dokumente: Datenblätter und Konformität (wo zutreffend)",
+      "Vorkasse (B2B)",
+      "Direktversand nach Italien mit bestätigten Lieferzeiten",
     ],
-    supAsk: "Senden Sie: Preisliste, Kataloge, MOQ, Lieferbedingungen.",
-    actionRequired: "Aktion erforderlich",
-    contactSupplyTeam: "Supply-Team kontaktieren",
+    asideBoxTitle: "Für Lieferanten",
+    asideBoxText:
+      "Senden: Preisliste, PDF-Kataloge, MOQ, Incoterms, Lieferzeiten, Italien-Abdeckung.",
+    asideCta: "E-Mail an Supply-Team",
+    asideMailto:
+      "mailto:partners@genjiko.it?subject=Genjiko%20Safety%20%E2%80%94%20Lieferantenangebot%20(B2B)",
+
     h2c: "Wie wir arbeiten",
     workList: [
       "Streng B2B: Firmen, Hotels, Einrichtungen, Eigentumswohnungen, Industrie.",
@@ -203,7 +225,7 @@ const i18n: Record<Lang, any> = {
       "Neutrale / institutionelle Verpackung wo möglich.",
     ],
     footer:
-      "Betrieben von <strong>Genjiko S.r.l.</strong> (Italien).<br/>USt-IdNr. / P.IVA &amp; Steuernr.: <span class='mono'>02584250035</span> • Handelsreg.: <span class='mono'>REA VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span> • Hauptseite: <span class='mono'>genjiko.eu</span>",
+      "Betrieben von <strong>Genjiko S.r.l.</strong> (Italien).<br/>USt-IdNr. / P.IVA &amp; Steuernr.: <span class='mono'>02584250035</span> • Handelsreg.: <span class='mono'>REA VB 206638</span><br/>B2B: <span class='mono'>partners@genjiko.it</span>",
   },
 };
 
@@ -241,13 +263,18 @@ export default function Home() {
           className="mx-auto mb-16 max-w-4xl text-center"
         >
           <div className="mb-8 flex justify-center">
-            <img src={logoImg} alt="Genjiko Safety Logo" className="h-28 object-contain md:h-40 lg:h-44" />
+            {/* LOGO: più grande + limiti per non “sgranare” su mobile */}
+            <img
+              src={logoImg}
+              alt="Genjiko Safety Logo"
+              className="h-28 object-contain sm:h-32 md:h-40 lg:h-44"
+            />
           </div>
 
           <h1 className="mb-6 text-3xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             {t.title}
           </h1>
-          <p className="mx-auto mb-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             {t.subtitle}
           </p>
 
@@ -375,7 +402,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Aside: Suppliers */}
+          {/* Aside: Requirements & Process (no ridondanza) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -386,13 +413,13 @@ export default function Home() {
             <div className="b2b-card h-full border-primary border-t-4 border-t-accent bg-primary text-background">
               <h2 className="mb-6 flex items-center gap-2 text-xl font-bold text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                {t.h2b}
+                {t.asideTitle}
               </h2>
 
-              <p className="mb-6 text-sm leading-relaxed text-white/80">{t.supIntro}</p>
+              <p className="mb-6 text-sm leading-relaxed text-white/80">{t.asideIntro}</p>
 
               <ul className="mb-8 space-y-4">
-                {t.supList.map((item: string, i: number) => (
+                {t.asideList.map((item: string, i: number) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-white/90">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                     <span>{item}</span>
@@ -402,22 +429,17 @@ export default function Home() {
 
               <div className="rounded-sm border border-white/20 bg-white/10 p-4">
                 <p className="mb-2 font-mono text-xs uppercase tracking-wide text-white/70">
-                  {t.actionRequired}
+                  {t.asideBoxTitle}
                 </p>
-                <p className="mb-4 text-sm font-medium text-white">{t.supAsk}</p>
+                <p className="mb-4 text-sm font-medium text-white">{t.asideBoxText}</p>
 
-                <ContactDialog
-                  title={t.ctaSup}
-                  subtitle={t.supAsk}
-                  trigger={
-                    <Button
-                      variant="secondary"
-                      className="w-full rounded-none border-none bg-accent font-medium text-white hover:bg-accent/90"
-                    >
-                      {t.contactSupplyTeam}
-                    </Button>
-                  }
-                />
+                <Button
+                  asChild
+                  variant="secondary"
+                  className="w-full rounded-none border-none bg-accent font-medium text-white hover:bg-accent/90"
+                >
+                  <a href={t.asideMailto}>{t.asideCta}</a>
+                </Button>
               </div>
             </div>
           </motion.div>
