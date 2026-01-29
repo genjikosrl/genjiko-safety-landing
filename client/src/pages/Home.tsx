@@ -410,7 +410,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="lg:col-span-1"
           >
-            <div className="b2b-card h-full border-primary border-t-4 border-t-accent bg-primary text-background">
+            <div className="b2b-card h-full border-primary border-t-4 border-t-accent !bg-primary !text-white">
               <h2 className="mb-6 flex items-center gap-2 text-xl font-bold text-inherit">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                 {t.asideTitle}
